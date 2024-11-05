@@ -42,7 +42,7 @@ const getFieldByType = (props: TFieldComponentProps) => {
           value={props.value}
           onChange={props.onChange}
           options={props.options || []}
-          renderInput={(params) => <TextField variant="standard" {...params} label={props.placeholder} />}
+          renderInput={(params) => <TextField variant="standard" {...params} placeholder={props.placeholder} />}
           multiple={props.isMulti}
         />
       );

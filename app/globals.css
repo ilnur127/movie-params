@@ -11,9 +11,19 @@ textarea {
   font-size: 15px;
 }
 
-.ant-select-selection-placeholder,
+.MuiAutocomplete-root {
+  padding-left: 10px;
+}
+
+.css-953pxc-MuiInputBase-root-MuiInput-root::before,
+.css-953pxc-MuiInputBase-root-MuiInput-root::after {
+  border: none !important;
+}
+
+.css-1x51dt5-MuiInputBase-input-MuiInput-input,
 ::placeholder {
-  font-size: 15px;
+  font-family: var(--font-helveticaNeue-regular) !important;
+  font-size: 15px !important;
   color: #1d1d1d66 !important;
   opacity: 1;
 }
