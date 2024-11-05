@@ -1,3 +1,5 @@
+'use client'
+
 import { defaultValues, fieldsToForm, TFieldsToForm } from './const';
 import { Inputs } from './types';
 
