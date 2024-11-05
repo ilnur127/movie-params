@@ -15,12 +15,12 @@ textarea {
   padding-left: 10px;
 }
 
-.css-953pxc-MuiInputBase-root-MuiInput-root::before,
-.css-953pxc-MuiInputBase-root-MuiInput-root::after {
+.MuiInputBase-root::before,
+.MuiInputBase-root::after {
   border: none !important;
 }
 
-.css-1x51dt5-MuiInputBase-input-MuiInput-input,
+.MuiInputBase-root,
 ::placeholder {
   font-family: var(--font-helveticaNeue-regular) !important;
   font-size: 15px !important;
