@@ -3,7 +3,7 @@
 import { PatternFormat } from 'react-number-format';
 
 import { EFieldTypes, TOption } from '@/shared/types';
-import { Select } from 'antd';
+import { Autocomplete, TextField } from '@mui/material';
 
 type TFieldComponentProps = {
   type: EFieldTypes;
@@ -38,14 +38,12 @@ const getFieldByType = (props: TFieldComponentProps) => {
       }
     case EFieldTypes.select:
       return (
-        <Select
+        <Autocomplete
           value={props.value}
           onChange={props.onChange}
-          options={props.options}
-          placeholder={props.placeholder}
-          style={{ width: '100%', border: 'none' }}
-          bordered={false}
-          mode={props.isMulti ? 'multiple' : undefined}
+          options={props.options || []}
+          renderInput={(params) => <TextField variant="standard" {...params} label={props.placeholder} />}
+          multiple={props.isMulti}
         />
       );
     case EFieldTypes.text:
